@@ -4,43 +4,94 @@ html, body {
     padding: 0; /* Remove preenchimentos padrão do navegador */
 }
 
+h2{
+color: rgb(194, 121, 250);
+}
+
+
+body{
+    background-image: url(https://i.pinimg.com/736x/8a/af/3d/8aaf3d437c97259c5fab991c04986333.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+   
+}
+
 #caixaUniQuiz{
-    width: 80%; /*largura da caixa*/
+    width: 70%; /*largura da caixa*/
     max-width: 650px; /*Limita a largura máxima do */
-    height: 750px;
-    background-color: black;
-    border-radius: 10px;
+    height: 540px;
+    background-color: rgb(37, 13, 55);
+    border-radius: 20px;
+    padding: 20px;
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     text-align: center;
-    top: 11%;
+    top: 15%;
     position: absolute;
     overflow: hidden;
-    box-shadow: 0 20px 20px rgb(0, 0, 0);
+    box-shadow: 0 20px 20px rgb(121, 86, 135);
 }
 
 
 button{
     background-color: #a04dd6;
-    border-top:dez;
-    color: white;
-    padding:  20px 30px;
+    border-top:20px;
+    color: rgb(7, 255, 243);
+    padding:  10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin-top: 100px;
-    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 70px;
+    border-radius: 15px;
+
+
+    width: 150px;
+    height: 150px;
+    animation-name: example;
+    animation-duration: 4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-    body{
-        background-color: mediumpurple;
-        display: flex; 
-        justify-content: center;
-        align-items: center; 
-       
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.answer-btn:hover {
+    background-color: #571099;
+}
+.answer-btn.correct {
+    background-color: #40a257;
+}
+.answer-btn.incorrect {
+    background-color: #d2626d;
+}
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
     .option:hover{
         background: rgb(100, 33, 133);
@@ -53,10 +104,33 @@ button{
             font-size: 1.4rem;
             color: darkorchid;
         }
+        
+
+
+      
+
+
+
+
+
+
+      
+      @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+      }
+
+
+
+
+
+
+
+
     }
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(-20px); }
         to { opacity: 1; transform: translateY(0); }
       }
-
-    
