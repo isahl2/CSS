@@ -10,15 +10,15 @@ color: rgb(194, 121, 250);
 
 
 body{
-    background-image: url(https://i.pinimg.com/736x/8a/af/3d/8aaf3d437c97259c5fab991c04986333.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/8a/af/3d/8aaf3d437c97259c5fab991c04986333.jpg); /*Define a imagem de fundo */
+    background-repeat: no-repeat; /*Não repete a imagem */
+    background-attachment: fixed; /*fixa a imagem */
+    background-size: cover; /*a imagem cobre todo o fundo */
+    text-align: center; /*alinha o texto */
+    display: flex; /*faz com que o body seja flexível */
+    justify-content: center; /*conteúdo ao centro */
+    align-items: center; /*centraliza itens */
+    height: 100vh; /*altura */
     margin: 0;
    
 }
@@ -26,61 +26,76 @@ body{
 #caixaUniQuiz{
     width: 70%; /*largura da caixa*/
     max-width: 650px; /*Limita a largura máxima do */
-    height: 600px;
-    background-color: rgb(37, 13, 55);
-    border-radius: 20px;
-    padding: 20px;
-    color: aliceblue;
+    height: 600px; /*Altura da caixa */
+    background-color: rgb(37, 13, 55); /*cor de fundo da caixa */
+    border-radius: 20px; /*arredonda as bordas */
+    padding: 20px; /*espaçamento */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    text-align: center;
-    top: 10%;
+    justify-content: center; /*caixa ao centro */
+    align-items: center; /*alinha os itens */
+    font-size: 1.5em; /*tamanho da fonte */
+    text-align: center; /*alinha o texto */
+    top: 10%; /*espaçamento do topo */
     position: absolute;
     overflow: hidden;
-    box-shadow: 0 20px 20px rgb(121, 86, 135);
+    box-shadow: 0 20px 20px rgb(121, 86, 135); /*sombra da caixa */
 }
+
+
+
+
+
+
+#imagemSolta {
+    
+    max-width: 80%; /* Garante que a imagem não seja maior que a caixa */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem (se for inline) */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+}
+
+
+
+
+
 
 
 button{
    background-color: #a04dd6;
-    border: none; /* Alterado de border-top para border: none para remover qualquer borda indesejada */
-    color: rgb(7, 255, 243);
-    padding: 10px 20px; /* Ajuste o padding para controlar o espaçamento interno */
+    border: none; /*para remover qualquer borda indesejada */
+    color: rgb(7, 255, 243); /*cor da letra */
+    padding: 10px 20px; /*para controlar o espaçamento interno */
     text-decoration: none;
-    font-size: 1.0em; /* Aumentei um pouco o tamanho da fonte para melhor leitura */
+    font-size: 1.0em; /*fonte da letra */
     margin-top: 20px;
     border-radius: 10px;
-    /* Removido display: flex e suas propriedades associadas, pois já está centralizando o texto com text-align e padding */
     text-align: center; /* Centraliza o texto horizontalmente */
-   flex-direction: column;
-    width: 500px 
+    flex-direction: column; /*deixa os botões em colunas */
+    width: 500px; /*define a largura dos botões */
 
 }
 
 
 .container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    display: flex; /*faz o container flexível */
+    flex-direction: column; /*deixa o container em colunas */
+    gap: 10px; /*espaçamento */
+    align-items: center; /*alinhar tudo ao centro */
 }
 
 .answer-btn:hover {
-    background-color: #571099;
+    background-color: #571099; /*cor quando se passa o mouse em cima */
 }
 .answer-btn.correct {
-    background-color: #40a257;
+    background-color: #40a257; /*Cor da resposta certa */
 }
 .answer-btn.incorrect {
-    background-color: #d2626d;
+    background-color: #d2626d; /*Cor da resposta errada */
 }
 .answer-btn:disabled {
-    cursor: not-allowed;
+    cursor: not-allowed; /*A cor fica diferente quando se é respondida uma questão */
     opacity: 0.7;
 }
-
 
 
     .option:hover{
