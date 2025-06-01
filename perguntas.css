@@ -26,7 +26,7 @@ body{
 #caixaUniQuiz{
     width: 70%; /*largura da caixa*/
     max-width: 650px; /*Limita a largura máxima do */
-    height: 540px;
+    height: 600px;
     background-color: rgb(37, 13, 55);
     border-radius: 20px;
     padding: 20px;
@@ -36,7 +36,7 @@ body{
     align-items: center;
     font-size: 1.5em;
     text-align: center;
-    top: 15%;
+    top: 10%;
     position: absolute;
     overflow: hidden;
     box-shadow: 0 20px 20px rgb(121, 86, 135);
@@ -44,26 +44,21 @@ body{
 
 
 button{
-    background-color: #a04dd6;
-    border-top:20px;
+   background-color: #a04dd6;
+    border: none; /* Alterado de border-top para border: none para remover qualquer borda indesejada */
     color: rgb(7, 255, 243);
-    padding:  10px 20px;
-    text-align: center;
+    padding: 10px 20px; /* Ajuste o padding para controlar o espaçamento interno */
     text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    margin-top: 70px;
-    border-radius: 15px;
+    font-size: 1.0em; /* Aumentei um pouco o tamanho da fonte para melhor leitura */
+    margin-top: 20px;
+    border-radius: 10px;
+    /* Removido display: flex e suas propriedades associadas, pois já está centralizando o texto com text-align e padding */
+    text-align: center; /* Centraliza o texto horizontalmente */
+   flex-direction: column;
+    width: 500px 
 
-
-    width: 150px;
-    height: 150px;
-    animation-name: example;
-    animation-duration: 4s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
 
 .container{
     display: flex;
@@ -87,12 +82,7 @@ button{
 }
 
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+
     .option:hover{
         background: rgb(100, 33, 133);
         color: aqua;
@@ -105,30 +95,6 @@ button{
             color: darkorchid;
         }
         
-
-
-      
-
-
-
-
-
-
-      
-      @keyframes example {
-        0%   {background-color: red;}
-        25%  {background-color: yellow;}
-        50%  {background-color: blue;}
-        100% {background-color: green;}
-      }
-
-
-
-
-
-
-
-
     }
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(-20px); }
