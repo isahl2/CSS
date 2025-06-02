@@ -33,17 +33,17 @@ const questoes = [
     },
    {
         questao: "Qual o maior buraco negro já descoberto?",
-        opcoes: ["TON 618", "1E1740.7-2942", " Phoenix A", "S5 0014+81: "],
+        opcoes: ["TON 618", "1E1740.7-2942", " Phoenix A", "S5 0014+81 "],
         respostaCorreta: " Phoenix A"
     },
     {
         questao: "Quantos planetas existem atualmente no Sistema Solar (segundo a classificação da IAU)?",
-        opcoes: ["10", "9", "7", "8: "],
+        opcoes: ["10", "9", "7", "8 "],
         respostaCorreta: "8"
     },
     {
         questao: "Qual é o planeta mais próximo do Sol?",
-        opcoes: ["Vênus", "Mercúrio ", "Marte", "Saturno: "],
+        opcoes: ["Vênus", "Mercúrio ", "Marte", "Saturno "],
         respostaCorreta: "Mercúrio "
     }, 
     {
@@ -53,7 +53,7 @@ const questoes = [
     },
     {
         questao: "O que são os anos-luz?",
-        opcoes: ["A duração de um ano em Vênus", "A A velocidade da luz", "A distância que a luz percorre em um ano ", "O tempo que um planeta leva para girar: "],
+        opcoes: ["A duração de um ano em Vênus", "A A velocidade da luz", "A distância que a luz percorre em um ano ", "O tempo que um planeta leva para girar "],
         respostaCorreta: "A distância que a luz percorre em um ano "
     } 
 ];
